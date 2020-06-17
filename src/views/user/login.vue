@@ -57,7 +57,7 @@ export default {
   methods:{
      onSubmit() {
       if(this.username!=="" && this.password!=="") {
-        Toast('登录成功,存储token,跳转网页');
+        Toast('登录成功,存储token,跳转网页...');
         this.toggle = false;
         const token ='wang2020'
         this.$store.dispatch('setToken',token);
