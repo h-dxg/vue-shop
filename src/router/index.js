@@ -9,6 +9,8 @@ const user = () => import('@/views/user/user.vue')
 const detail = () => import('@/views/detail/detail.vue')
 const pay = () => import('@/views/pay/pay.vue')
 const login = () => import('@/views/user/login.vue')
+const register = () => import('@/views/user/register.vue')
+
 
 
 
@@ -65,6 +67,12 @@ const routes = [
     path: '/login',
     name: 'login',
     component: login,
+  },
+  // 注册页
+  {
+    path: '/register',
+    name: 'register',
+    component: register,
   },
   // 商品详情页
   {

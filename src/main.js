@@ -7,6 +7,9 @@ import Vant from 'vant'
 import 'vant/lib/index.css'
 import FastClick from 'fastclick'
 FastClick.attach(document.body)
+// 引入mockjs
+
+import './mock'
 
 Vue.use(Vant);
 Vue.config.productionTip = false
