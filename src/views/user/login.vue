@@ -58,7 +58,7 @@
 <script>
 import Header from '@/components/common/header'
 import { Toast, Notify } from 'vant';
-import axios from 'axios'
+import { login } from '@/api/login'
 export default {
   components: {
     Header
@@ -80,7 +80,7 @@ export default {
   methods: {
     onSubmit () {
       if (this.username !== "" && this.password !== "") {
-        axios.post('/login/index', { username: this.username, password: this.password })
+        login({ username: this.username, password: this.password })
           .then(res => {
             if (res.data.code === 200) {
               Toast('登录成功,存储token,跳转网页...');

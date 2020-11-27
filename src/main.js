@@ -6,12 +6,15 @@ import 'lib-flexible'
 import Vant from 'vant'
 import 'vant/lib/index.css'
 import FastClick from 'fastclick'
+import axios from '@/request/axios'
+import VueAxios from 'vue-axios'
 FastClick.attach(document.body)
 // 引入mockjs
 
 import './mock'
 
 Vue.use(Vant);
+Vue.use(VueAxios, axios)
 Vue.config.productionTip = false
 // 用钩子函数beforeEach()对路由进行判断
 

@@ -107,23 +107,6 @@ const login = function (config) {
     }
   }
 
-  // 存在
-  // if (List.indexOf(obj) !== -1) {
-  //   return {
-  //     code: 200,
-  //     data: {
-  //       data: Mock.Random.guid(),
-  //       message: '登录成功！'
-  //     }
-  //   }
-  // } else {
-  //   return {
-  //     code: 201,
-  //     data: {
-  //       message: '账号或者密码错误！'
-  //     }
-  //   }
-  // }
 
 }
 

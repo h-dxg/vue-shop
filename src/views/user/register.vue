@@ -38,7 +38,7 @@
 
 <script>
 import Header from '@/components/common/header'
-import axios from 'axios'
+import { register } from '@/api/login'
 import { Notify } from 'vant';
 export default {
   components: {
@@ -59,7 +59,7 @@ export default {
     onSubmit () {
       // 注册账号
       if (this.form.username !== "" && this.form.password !== "") {
-        axios.post('/register/index', { ...this.form })
+        register({ ...this.form })
           .then(res => {
             console.log(res, 'res')
             if (res.data.code === 200) {
